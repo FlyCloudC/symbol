@@ -1,0 +1,23 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "FlyCloudC/symbol"
+
+// Values
+pub let gen_counter : Ref[Int]
+
+// Errors
+
+// Types and methods
+type Symbol
+pub fn Symbol::generate() -> Self
+pub fn Symbol::is_generated(Self) -> Bool
+pub fn Symbol::of(String) -> Self
+pub impl Compare for Symbol
+pub impl Default for Symbol
+pub impl Eq for Symbol
+pub impl Hash for Symbol
+pub impl Show for Symbol
+
+// Type aliases
+
+// Traits
+
