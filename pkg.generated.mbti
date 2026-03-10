@@ -1,6 +1,10 @@
 // Generated using `moon info`, DON'T EDIT IT
 package "FlyCloudC/symbol"
 
+import {
+  "moonbitlang/core/debug",
+}
+
 // Values
 pub let gen_counter : Ref[Int]
 
@@ -16,6 +20,7 @@ pub impl Default for Symbol
 pub impl Eq for Symbol
 pub impl Hash for Symbol
 pub impl Show for Symbol
+pub impl @debug.Debug for Symbol
 
 // Type aliases
 

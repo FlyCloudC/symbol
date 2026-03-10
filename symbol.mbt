@@ -22,6 +22,11 @@
 struct Symbol(Int) derive(Eq, Hash, Compare, Default)
 
 ///|
+pub impl Debug for Symbol with to_repr(self) {
+  Repr::opaque_("Symbol", Repr::string(self.to_string()))
+}
+
+///|
 fn Symbol::tag(self : Symbol) -> Int {
   (self.0.reinterpret_as_uint() >> 28).reinterpret_as_int()
 }
